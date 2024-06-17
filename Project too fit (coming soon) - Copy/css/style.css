@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ body {
+ 	background-color: #eaeff3;
+} 
+
+/* index page styling begins */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../Images/dakota3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center ;
+}
+ 
+nav img {
+    width: 150px;
+}
+
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navlinks ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto ;
+    transition: 0.5s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.textbox h1 {
+    font-size: 62px;
+}
+
+.herobtn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.herobtn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.fa-bars {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight:600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    /* flex-basis: 31%; */
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.campus-col img {
+    width:  100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(226, 0, 0,0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute; 
+    opacity: 0;
+    transition: 0.5s;  
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col {
+    max-height: 320px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+    color: #fff;
+    margin-top: 50px;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa-brands, .icons .fa-solid {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+}
+
+.fa-heart{
+    color: #f44336;
+}
+/* index page styling ends */
+
+
+/* about page styling starts */
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(98.3deg, rgba(0, 0, 0, 0.906) 10.6%, rgba(255, 0, 0, 0.708) 97.7%), url() ;
+    text-align: center;
+    background-size: cover;
+}
+
+.about-h1{
+    position: relative;
+    bottom: 100px;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+.about-col h1 {
+    padding-top: 0;
+}
+
+.about-col P {
+    padding: 15px 0 25px;
+}
+
+.redbtn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+/* shoppage */
+.back-video{
+    z-index: -2;
+    width: 70%;
+}
+
+.videodiv{
+    height: 50vh;
+    overflow: hidden;
+}
+
+.shop1{
+    border: 1px solid red;
+    width: 500px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.buynow-btn{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+
+
+/* cards stylying for shop */
+.content h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    background: #f2f2f2;
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px, -8px);
+}
+
+.content img {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.content p {
+    text-align: center;
+    color: #b2bec3;
+    padding-top: 0 8px;
+}
+
+.content h6 {
+    font-size: 26px;
+    text-align: center;
+    color: #222;
+    margin: 0;
+}
+
+.content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+.content ul li {
+    padding-top: 5px;
+}
+
+.content .fa {
+    font-size: 26px;
+    transition: .4s;
+    margin: 3px;
+}
+
+.content .checked {
+    color: #ff9f43;
+}
+
+.content .fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+.content button {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none; 
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.buy1 {
+    background:#2183a2;
+}
+
+.buy2 {
+    background: #3b3e6e;
+}
+.buy3 {
+    background: #0b0b0b ; 
+}
+.buy4 {
+    background: #ff9f43;
+}
+
+
+
+
+/* responsive design for navbar */
+
+.myfirstnav {
+    height: 300px;
+    background: #474646d9;
+    border-radius: 20px;
+    width: 200px;
+    position: absolute;
+    top:30px;
+    right: 10px;
+    display: none;
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+.myfirstnav ul li {
+    list-style: none;
+    /* padding: 20px; */
+    line-height: 4;
+}
+
+.myfirstnav ul li a {
+    text-decoration: none;
+    color: rgb(229, 97, 57);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.myfirstnav ul li a:hover {
+    color:rgb(255, 255, 255) ;
+}   
+
+.fa-xmark {
+    color: #fff;
+    position: absolute;
+    right: 10px;   
+}
+
+
+
+
+
+
+/* 
+fitness tips section */
+
+.fitnesstips img {
+    width: 200px;
+    float: left;
+}
+
+.fitnesstips h2 {
+    text-align: center;
+}
+
+.fitnesstips {
+    margin: 10px;
+}
+
+
+@media (max-width:1000px) {
+    .content {
+        width: 45%;
+    }
+}
+
+@media (max-width:590px) {
+    .textbox h1 {
+        font-size: 20px;
+    }
+ 
+    .fa-bars {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+    }
+
+    .navlinks ul li {
+        display: none;
+
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+ 
+
+    .about-h1{
+        position: relative;
+        bottom: 100px;
+    }
+
+
+   .content {
+    width: 100%;
+   }
+
+}
+
+
+
